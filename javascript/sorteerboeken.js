@@ -2,16 +2,16 @@ const url = "Boeken.json";
 //keuze voorsorteer opties
 let kenmerk = document.getElementById('kenmerk');
 kenmerk.addEventListener('change', (e) =>{
-    sorteerBoekObj.kenmerk = e.target.value;
-    sorteerBoekObj.sorteren();
+    shopBoekenObj.kenmerk = e.target.value;
+    shopBoekenObj.sorteren();
 });
 
 // JSON importeren
 let xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if(this.readyState===4 && this.status===200){
-        sorteerBoekObj.data = JSON.parse(this.responseText);
-        sorteerBoekObj.sorteren();
+        shopBoekenObj.data = JSON.parse(this.responseText);
+        shopBoekenObj.sorteren();
     }
 };
 xmlhttp.open('GET', url, true);
@@ -45,7 +45,7 @@ const maakTabelRij = (arr, accent) => {
 // object dat de boeken uitvoert en ook sorteert en data bevat.
 // eigenschappen: data, (sorteer)kenmerk
 // methods: sorteren(), uitvoeren()
-let sorteerBoekObj =  {
+let shopBoekenObj =  {
     data: "",  // komt van xmlhttp.onreadystatechange
 
     kenmerk: "uitgave",

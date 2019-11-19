@@ -22,7 +22,7 @@
   {
     "titel": "Delft design guide",
     "cover": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/8/6/6/6/9200000014636668.jpg",
-    "auteur": ["Zijlstra, Yvo", "Daalhuizen, Jaap ", "Schoor, Roos van der ", "Boeijen, Annemiek van "],
+    "auteur": ["Zijlstra, Yvo", " Jaap Daalhuizen", " Roos van der Schoor", " Annemiek van Boeijen"],
     "uitgave": "2013-09",
     "ean": "9789063693275",
     "paginas": 176,
@@ -42,7 +42,7 @@
   {
     "titel": "Front-End Web Development",
     "cover": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/4/4/1/7/9200000050597144.jpg",
-    "auteur": ["Aquino, Chris", "Gandee, Todd "],
+    "auteur": ["Aquino, Chris", " Todd Gandee"],
     "uitgave": "2016-06",
     "paginas": 300,
     "taal": "Engels",
@@ -132,7 +132,7 @@
   {
     "titel": "Hands-On Full-Stack Web Development with ASP.NET Core",
     "cover": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/9/1/9/1/9200000101541919.jpg",
-    "auteur": ["Dresher, Tamir", "Zuker, Amir ", "Friedman, Shay "],
+    "auteur": ["Dresher, Tamir", " Amir Zuker", " Shay Friedman"],
     "uitgave": "2018-10",
     "paginas": 478,
     "taal": "Engels",

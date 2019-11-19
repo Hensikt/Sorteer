@@ -11,3 +11,15 @@
 .boekSelectie__data-cel:nth-child(3){
     padding: 0;
 }
+
+/* Layout van de sections */
+.boekSelectie{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1em;
+    margin-bottom: 1em;
+}
+
+.boekSelectie__prijs{
+    font-size: 2em;
+}
