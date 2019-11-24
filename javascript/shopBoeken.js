@@ -160,12 +160,18 @@ let shopBoekenObj =  {
             prijs.className = 'boekSelectie__prijs';
             prijs.textContent = boek.prijs.toLocaleString('nl-NL', {currency: 'EUR', style: 'currency'});
 
+            // Knop voor de prijzen
+            let knop = document.createElement('button');
+            knop.className = 'boekSelectie__knop';
+            knop.innerHTML = 'voeg toe aan <br> winkelwagen';
+
             // Hoofd element,
             sectie.appendChild(afbeelding);
             main.appendChild(titel);
             main.appendChild(auteurs);
             main.appendChild(overig);
             sectie.appendChild(main);
+            prijs.appendChild(knop);
             sectie.appendChild(prijs);
             document.getElementById('uitvoer').appendChild(sectie);
         });

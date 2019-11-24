@@ -1,69 +1,114 @@
 /* Universeel */
-body{
+body {
     font-family: sans-serif;
 }
 
 /* Classes */
-.boekSelectie__cover{
+.winkelwagen {
+    width: 3em;
+    height: 3em;
+    background-image: url("../afb/winkelwagen.png");
+    -webkit-background-size: contain;
+    background-size: contain;
+    float: right;
+    margin-right: 3em;
+    position: relative;
+}
+
+.winkelwagen__aantal:not(:empty){
+    background: red;
+    display: inline-block;
+    color: #fff;
+    position: absolute;
+    top: -.1em;
+    right: -.2em;
+    line-height: .5em;
+    padding: .35em;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.boekSelectie__cover {
     max-width: 100px;
 }
-.boekSelectie__rij--accent{
+
+.boekSelectie__rij--accent {
     background-color: #def;
 }
-.boekSelectie__data-cel{
+
+.boekSelectie__data-cel {
     padding: 1em;
     vertical-align: top;
 }
-.boekSelectie__data-cel:nth-child(3){
+
+.boekSelectie__data-cel:nth-child(3) {
     padding: 0;
 }
 
 /* Layout van de sections */
-.boekSelectie{
+.boekSelectie {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 1em;
     margin-bottom: 1em;
 }
 
-.boekSelectie:nth-child(even){
+.boekSelectie:nth-child(even) {
     background-color: #eee;
 
 }
 
-.boekSelectie__main{
+.boekSelectie__main {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
-.boekSelectie__titel{
+.boekSelectie__titel {
     margin: 0;
 }
 
-.boekSelectie__overig{
+.boekSelectie__overig {
     margin: 0;
     font-size: .8em;
     color: #444;
     padding: .5em 0;
 }
 
-.boekSelectie__prijs{
+.boekSelectie__prijs {
     font-size: 2em;
     padding: .5em;
 }
 
-@media screen and (min-width: 58em){
-    #uitvoer{
+.boekSelectie__knop{
+    display: block;
+    margin: 1.5em auto;
+    background-color: #d00;
+    cursor: pointer;
+    color: #fff;
+    padding: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+}
+
+.boekSelectie__knop:hover{
+    background-color: #900;
+}
+
+@media screen and (min-width: 58em) {
+    #uitvoer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 2em;
     }
 
-    .boekSelectie:nth-child(even){
+    .boekSelectie:nth-child(even) {
         background-color: inherit;
     }
+
     .boekSelectie:nth-child(4n+2),
-    .boekSelectie:nth-child(4n+3){
+    .boekSelectie:nth-child(4n+3) {
         background-color: #eee;
     }
 }
