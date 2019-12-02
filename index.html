@@ -8,22 +8,24 @@
         <link rel="stylesheet" href="css/master.css">
     </head>
     <body>
-    <div class="winkelwagen"><span class="winkelwagen__aantal"></span></div>
-    <h1>Een selectie van boeken</h1>
-    <select id="kenmerk">
-        <option value="titelUpper">Titel</option>
-        <option value="sortAuteur">Auteur</option>
-        <option value="jsDatum">Uitgave</option>
-        <option value="paginas">Pagina's</option>
-        <option value="taal">Taal</option>
-        <option value="prijs">Prijs</option>
-    </select>
+        <header class="header">
+            <a href="bestelpagina.html"><div class="winkelwagen"><span class="winkelwagen__aantal"></span></div></a>
+            <h1>Een selectie van boeken</h1>
+        </header>
+                <select id="kenmerk">
+                    <option value="titelUpper">Titel</option>
+                    <option value="sortAuteur">Auteur</option>
+                    <option value="jsDatum">Uitgave</option>
+                    <option value="paginas">Pagina's</option>
+                    <option value="taal">Taal</option>
+                    <option value="prijs">Prijs</option>
+                </select>
 
-<!--        Radio buttons voor op- en aflopend sorteren-->
-        <label><input type="radio" name="oplopend" value="1">oplopend</label>
-        <label><input type="radio" name="oplopend" value="-1">aflopend</label>
+            <!--        Radio buttons voor op- en aflopend sorteren-->
+                <label><input type="radio" name="oplopend" value="1">oplopend</label>
+                <label><input type="radio" name="oplopend" value="-1">aflopend</label>
 
-        <div id="uitvoer"></div>
-        <script src="javascript/shopBoeken.js"></script>
+                <div id="uitvoer"></div>
+                <script src="javascript/shopBoeken.js"></script>
     </body>
 </html>
